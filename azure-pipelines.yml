@@ -2,15 +2,25 @@ trigger:
 - main
 
 pool:
-  name: Default
+  name: Default   # your self-hosted agent pool
 
 steps:
 
-- script: |
-    docker pull redis
-    docker run -d -p 6379:6379 --name myredis redis
-  displayName: 'Start Redis'
+- checkout: self
 
-- script: docker ps
-  displayName: 'Verify Redis'
+- script: |
+    echo "Stopping old containers..."
+    docker compose -f deploy/docker-compose.yml down
+  displayName: "Stop existing containers"
+
+- script: |
+    echo "Pulling latest images..."
+    docker compose -f deploy/docker-compose.yml pull
+  displayName: "Pull latest images"
+
+- script: |
+    echo "Starting containers..."
+    docker compose -f deploy/docker-compose.yml up -d --build
+  displayName: "Start containers"
+
 
