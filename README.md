@@ -4,7 +4,7 @@ The Digital Human for Customer Service NVIDIA AI Blueprint is powered by NVIDIA 
 
 This blueprint is powered by a suite of easy to use and performance-optimized NVIDIA NIM<sup>TM</sup> inference microservices, for avatar animation, speech AI, and generative AI.  The avatar is rendered using the Omniverse RTX microservice, animated with the Audio2Face NIM, and has a responsive speech interface with the NVIDIA Riva NIM and ElevenLabs integrations.   
 
-## Why digital humans?
+## Why digital humanss?
 Digital humans will revolutionize industries from customer service, to advertising and gaming.  The possibilities for digital humans are endless.  With an approachable, human-like interface, customer service applications can provide better user experiences with faster resolutions than generative AI powered applications with just a text or speech interface.  Check out this youtube video. This digital humans blueprint highlights how to use NVIDIA hardware and software to bring the $125B digital human market to life.  80% of conversational offerings will embed generative AI by 2025, up from 20% in 2024*.  And 75% of conversational AI customer-facing business applications will have emotion AI by 2030, up from less than 10% in 2024<sup>*</sup>
 
 \*Gartner – Emerging Tech: Navigating the Hurdles of Digital Humans
